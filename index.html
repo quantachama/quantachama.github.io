@@ -40,8 +40,16 @@
       <div class="bottom">
         <!-- Social Icons (update hrefs as you like) -->
         <ul class="icons">
-          <li><a href="https://github.com/jpnechama" class="icon brands fa-github" target="_blank" rel="noopener"><span class="label">Github</span></a></li>
-          <li><a href="#" class="icon brands fa-linkedin" target="_blank" rel="noopener"><span class="label">LinkedIn</span></a></li>
+          <li><a href="https://github.com/quantachama" class="icon brands fa-github" target="_blank" rel="noopener"><span class="label">Github</span></a></li>
+          <li>
+		  <a href="https://www.linkedin.com/in/jpiddesign" 
+			 class="icon brands fa-linkedin" 
+			 target="_blank" 
+			 rel="noopener noreferrer">
+			 <span class="label">LinkedIn</span>
+		  </a>
+		</li>
+
           <li><a href="mailto:jp.idisegno@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
           <li><a href="tel:+972549175734" class="icon solid fa-phone"><span class="label">Phone</span></a></li>
         </ul>
@@ -189,18 +197,29 @@
           </p>
 
           <!-- If you keep the form, it’s fine. Below are direct links too. -->
-          <form method="post" action="#">
-            <div class="row">
-              <div class="col-6 col-12-mobile"><input type="text" name="name" placeholder="Name" /></div>
-              <div class="col-6 col-12-mobile"><input type="text" name="email" placeholder="Email" /></div>
-              <div class="col-12">
-                <textarea name="message" placeholder="Message"></textarea>
-              </div>
-              <div class="col-12">
-                <input type="submit" value="Send Message" />
-              </div>
-            </div>
-          </form>
+					<form action="https://formspree.io/f/xblzgrle" method="POST">
+			  <div class="row">
+				<!-- Name -->
+				<div class="col-6 col-12-mobile">
+				  <input type="text" name="name" placeholder="Your Name" required />
+				</div>
+
+				<!-- Email -->
+				<div class="col-6 col-12-mobile">
+				  <input type="email" name="email" placeholder="Your Email" required />
+				</div>
+
+				<!-- Message -->
+				<div class="col-12">
+				  <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+				</div>
+
+				<!-- Submit Button -->
+				<div class="col-12">
+				  <input type="submit" value="Send Message" class="button primary" />
+				</div>
+			  </div>
+			</form>
 
           <!-- Direct contact options -->
           <p>
